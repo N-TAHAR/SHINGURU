@@ -186,6 +186,7 @@ section{
 .section2 p{
   font-size: 14px;
   font-style: italic;
+  line-height: 1.7em;
 }
 
 .section2 button{
