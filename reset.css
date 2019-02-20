@@ -12,3 +12,7 @@ h1,h2,h3,p,a,ul, button{
   text-decoration: none;
   list-style: none;
 }
+
+a{
+  color: #373234;
+}

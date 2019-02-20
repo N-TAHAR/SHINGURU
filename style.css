@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -15,6 +19,7 @@ header {
   justify-content: space-around;
   /* background-image: linear-gradient(to bottom, rgba(55, 50, 52,0), rgba(55, 50, 52,0)); */
   transition: backgroundImage 1s;
+  z-index: 1;
 }
 
 .is-scrolled{
@@ -53,6 +58,20 @@ header {
 .menu li,
 .menuMore li {
   letter-spacing: 0.3em;
+  cursor: pointer;
+}
+
+.menu li::after, .menuMore li::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #A61804;
+  transition: width 0.3s;
+}
+
+.menu li:hover::after, .menuMore li:hover::after{
+  width: 100%;
 }
 
 .menu li:not(:last-child),
@@ -101,12 +120,31 @@ section{
 }
 
 .enter button {
+  position: relative;
   background: transparent;
   border: 1px solid #f4f2f0;
   padding: 15px 50px 15px 50px;
   color: #f4f2f0;
   font-size: 18px;
   letter-spacing: 0.2em;
+  cursor: pointer;
+}
+
+.enter button::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: #A61804;
+  transition: width 0.3s;
+  z-index: -1;
+}
+
+.enter button:hover::after{
+  width: 100%;
 }
 
 .scroll {
@@ -157,6 +195,7 @@ section{
   padding: 10px 40px 10px 40px;
   text-transform: uppercase;
   font-weight: 300;
+  cursor: pointer;
 }
 
 
@@ -201,6 +240,7 @@ section{
 .media img{
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 
 .media li:not(:last-child){
@@ -239,6 +279,7 @@ section{
   padding: 10px 40px 10px 40px;
   text-transform: uppercase;
   font-weight: 300;
+  cursor: pointer;
 }
 
 footer{
@@ -290,6 +331,10 @@ form input{
   color: #E0E0E0
 }
 
+form input:focus{
+  color: #373234;
+}
+
 form button{
   background: #A61804;
   border: none;
@@ -301,6 +346,7 @@ form button{
   height: 49px;
   margin-left: 10px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .bold{
@@ -328,6 +374,10 @@ form button{
   letter-spacing: 0.2em;
 }
 
+.info ul:not(:first-child) li:not(:first-child){
+  cursor: pointer;
+}
+
 .terms{
   margin-bottom: 10px;
 }
@@ -340,4 +390,25 @@ form button{
 
 .terms li:not(:last-child){
   margin-right: 20px;
+}
+
+.terms li{
+  cursor: pointer;
+}
+
+
+img{
+  transition: transform 0.5s;
+}
+
+img:hover{
+  transform: scale(1.05);
+}
+
+button{
+  transition: transform 0.5s;
+}
+
+button:hover{
+  transform: scale(1.05);
 }
