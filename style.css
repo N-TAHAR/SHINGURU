@@ -1,0 +1,343 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #f4f2f0;
+  overflow-x: hidden;
+  background-color: #F7F4F4;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  /* background-image: linear-gradient(to bottom, rgba(55, 50, 52,0), rgba(55, 50, 52,0)); */
+  transition: backgroundImage 1s;
+}
+
+.is-scrolled{
+  background-image: linear-gradient(to bottom, rgba(55, 50, 52, 1), rgba(55, 50, 52,0));
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+}
+
+.logo span {
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.menu,
+.menuMore {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.menu li:nth-child(1) {
+  font-weight: 500;
+}
+
+.menuMore li:nth-child(1) {
+  color: #bdbdbd;
+}
+
+.menu li,
+.menuMore li {
+  letter-spacing: 0.3em;
+}
+
+.menu li:not(:last-child),
+.menuMore li:not(:last-child) {
+  margin-right: 29px;
+}
+
+section{
+  height: 100vh;
+}
+
+.section1 {
+  background: url("img/manuel-cosentino-691602-unsplash.jpg");
+  background-size: cover;
+}
+
+.enter {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+}
+
+.enter p:nth-child(1) {
+  font-size: 13px;
+  letter-spacing: 1em;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.intro {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 29px;
+  line-height: 30px;
+}
+
+.enter h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: 0.16em;
+  margin-bottom: 29px;
+}
+
+.enter button {
+  background: transparent;
+  border: 1px solid #f4f2f0;
+  padding: 15px 50px 15px 50px;
+  color: #f4f2f0;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+.section2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #373234;
+}
+
+.section2 div{
+  margin-left: 50px;
+  width: 490px;
+}
+
+.section2 div > *:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.section2 h2{
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
+.section2 p{
+  font-size: 14px;
+  font-style: italic;
+}
+
+.section2 button{
+  background: #A61804;
+  border: none;
+  color: #F7F4F4;
+  letter-spacing: 0.3em;
+  padding: 10px 40px 10px 40px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #373234;
+  margin-bottom: 150px;
+}
+
+
+.section3 > *:not(:last-child){
+  margin-right: 100px;
+}
+
+.section3 img{
+  width: 300px;
+  height: 550px;
+}
+
+.section3 div > *:not(:last-child){
+  margin-bottom: 30px;
+}
+
+.section3 div p{
+  width: 300px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  line-height: 3em;
+}
+
+.section3 div span{
+  font-weight: 300;
+}
+
+.media{
+  display:flex;
+}
+
+.media img{
+  width: 50px;
+  height: 50px;
+}
+
+.media li:not(:last-child){
+  margin-right: 25px;
+}
+
+
+.section4 {
+  background: url('img/image\ 2.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.section4 h2{
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.section4 p{
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  margin-bottom: 60px;
+}
+
+.section4 button{
+  background: #A61804;
+  border: none;
+  color: #F7F4F4;
+  letter-spacing: 0.3em;
+  padding: 10px 40px 10px 40px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+footer{
+  color: #373234;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > *:not(:last-child){
+  margin-bottom: 80px;
+}
+
+.back, .info, .terms{
+  display: flex;
+}
+
+.back{
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.back p {
+  margin-right: 10px;
+  border-bottom: 1px solid #A61804;
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+form label{
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+form input{
+  width: 362px;
+  height: 49px;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 12px;
+  padding-left: 10px;
+  letter-spacing: 0.1em;
+  color: #E0E0E0
+}
+
+form button{
+  background: #A61804;
+  border: none;
+  color: #F7F4F4;
+  letter-spacing: 0.3em;
+  padding: 10px 40px 10px 40px;
+  text-transform: uppercase;
+  font-weight: 300;
+  height: 49px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.bold{
+  font-weight: 500;
+}
+
+.info ul:not(:last-child){
+  margin-right: 120px; 
+}
+
+
+.info ul li:not(:last-child){
+  margin-bottom: 15px; 
+}
+
+.info ul li:nth-child(1){
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+
+.info ul li:not(:first-child){
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+.terms{
+  margin-bottom: 10px;
+}
+
+.terms li{
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+}
+
+.terms li:not(:last-child){
+  margin-right: 20px;
+}
