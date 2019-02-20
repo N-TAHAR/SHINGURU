@@ -32,6 +32,7 @@ header {
   text-align: center;
   line-height: 1em;
   letter-spacing: 0.2em;
+  cursor: pointer;
 }
 
 .logo span {
