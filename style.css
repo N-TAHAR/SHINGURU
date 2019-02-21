@@ -60,6 +60,10 @@ header {
   width: 100%;
 }
 
+.menuMore li:nth-child(1) {
+  color: #bdbdbd;
+}
+
 .menu li:not(:last-child),
 .menuMore li:not(:last-child) {
   margin-right: 29px;
