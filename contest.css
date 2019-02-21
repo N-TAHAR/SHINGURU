@@ -1,0 +1,159 @@
+section{
+  color: #373234;
+}
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.3em;
+  margin-top: 100px;
+}
+
+.red{
+  color: #A61804;
+  font-weight: 500;
+}
+
+.presentation{
+  display: flex;
+}
+
+.presentation div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 331px;
+  /* text-align: center */
+  font-size: 16px;
+}
+
+.presentation div:not(:last-child){
+  margin-right: 100px;
+}
+
+.presentation div li:nth-child(1){
+  margin-bottom: 100px;
+}
+
+.lign{
+  width: 80vw;
+  height: 1px;
+  background-color: #E0E0E0;
+  margin: auto;
+}
+
+.section2{
+  margin-top: 100px;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.info div:not(:last-child){
+  margin-right: 100px;
+}
+
+.info div li:nth-child(1){
+  color: #000;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.info div li:nth-child(2){
+  font-size: 24px;
+  letter-spacing: 0.3em;
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.products li:not(:last-child){
+  margin-right: 20px;
+}
+
+.products li{
+  width: 331px;
+  height: 547px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bold{
+  font-weight: 500;
+}
+
+.infoProfil{
+  display: flex;
+  align-items: center;
+}
+
+.infoProfil p{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.imageProduct{
+  text-align: center;
+}
+
+.imageProduct p{
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.barAction{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #E7E7E7;
+  padding-top: 30px;
+}
+
+.barAction div{
+  display: flex;
+  align-items: flex-start;
+}
+
+.barAction div p{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+
+
+.page-product button{
+  display: block;
+  width: 70vw;
+  height: 86px;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background-color: #E7E7E7;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: auto;
+}

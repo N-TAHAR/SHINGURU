@@ -2,8 +2,17 @@
   box-sizing: border-box;
 }
 
-body{
+html{
+  scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #f4f2f0;
+  overflow-x: hidden;
+  background-color: #F7F4F4;
 }
 
 h1,h2,h3,p,a,ul, button{
