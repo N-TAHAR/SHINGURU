@@ -212,3 +212,12 @@ input[type=radio]:checked + label:before {
     background: #A61804;
     box-shadow: inset 0px 0px 0px 1px #fff;
 }
+
+
+header a{
+    color: #373234;
+}
+
+.menuMore li:nth-child(1){
+    opacity: 0.5;
+}

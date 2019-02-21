@@ -62,6 +62,7 @@ header {
 
 .menuMore li:nth-child(1) {
   color: #bdbdbd;
+  opacity: 0.5;
 }
 
 .menu li:not(:last-child),
@@ -73,8 +74,14 @@ section{
   height: 100vh;
 }
 
+section:not(:first-child):not(:nth-child(3)){
+  transform: translateY(200px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
 .section1 {
-  background: url("img/manuel-cosentino-691602-unsplash.jpg");
+  background: url("../img/manuel-cosentino-691602-unsplash.jpg");
   background-size: cover;
 }
 
@@ -208,6 +215,28 @@ section{
   height: 550px;
 }
 
+.section3 div:nth-child(1){
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+.section3 div:nth-child(2){
+  transform: translateY(200px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+.section3 div:nth-child(3){
+  transform: translateX(100px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+/* .section3 img:hover{
+  transform: scale(1.05);
+} */
+
 .section3 div > *:not(:last-child){
   margin-bottom: 30px;
 }
@@ -235,7 +264,7 @@ section{
 
 
 .section4 {
-  background: url('img/image\ 2.jpg');
+  background: url('../img/image\ 2.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -274,6 +303,9 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
 }
 
 footer > *:not(:last-child){
@@ -401,4 +433,9 @@ button:hover{
 
 header a{
   color: #f4f2f0;
+}
+
+.reset{
+  transform: none;
+  opacity: 1;
 }

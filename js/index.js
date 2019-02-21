@@ -7,9 +7,3 @@ window.addEventListener('scroll', ()=>{
     header.classList.remove('is-scrolled');
   }
 })
-
-// let back = document.querySelector('back');
-
-// back.addEventListener('click', ()=>{
-  
-// })
